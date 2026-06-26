@@ -1,0 +1,13 @@
+
+> animation-kiover@1.0.0 build
+> remotion render src/index.tsx out.mp4
+
+
+Error: You passed C:\Users\kumud\OneDrive\Documents\GitHub\animation-kiover\src\index.ts as your entry point, but this file does not contain "registerRoot". You should use the file that calls registerRoot() as the entry point. To ignore this error, pass "ignoreRegisterRootWarning" to bundle(). This error cannot be ignored on the CLI.
+    at validateEntryPoint (C:\Users\kumud\node_modules\@remotion\bundler\dist\bundle.js:154:15)
+    at async Object.internalBundle (C:\Users\kumud\node_modules\@remotion\bundler\dist\bundle.js:168:9)
+    at async bundleOnCli (C:\Users\kumud\node_modules\@remotion\cli\dist\setup-cache.js:151:21)
+    at async bundleOnCliOrTakeServeUrl (C:\Users\kumud\node_modules\@remotion\cli\dist\setup-cache.js:35:21)
+    at async renderVideoFlow (C:\Users\kumud\node_modules\@remotion\cli\dist\render-flows\render.js:167:53)
+    at async render (C:\Users\kumud\node_modules\@remotion\cli\dist\render.js:163:5)
+    at async cli (C:\Users\kumud\node_modules\@remotion\cli\dist\index.js:97:13)

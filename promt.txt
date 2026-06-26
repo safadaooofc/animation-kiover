@@ -1,0 +1,44 @@
+Atue como um Engenheiro de Front-end Especialista em React e Remotion. Preciso que você crie o código completo de uma Composition para uma animação fluida e moderna utilizando TypeScript.
+
+A ideia central da animação é:
+Um fundo preto com o texto "kiover.dll". Um cursor (uma bolinha minimalista) entra na tela, clica no texto, some, e dispara um efeito de onda expansiva que inverte as cores da tela e do texto, revelando o título de "Developer".
+
+Cronograma e Comportamento Esperado (Baseado em frames/segundos):
+
+Fase 1: Introdução (0s - 1s)
+
+Fundo 100% preto.
+
+O texto "kiover.dll" (em fonte monospace ou sans-serif moderna, cor branca) aparece no centro da tela com um efeito suave de fade-in e um leve movimento de baixo para cima usando interpolate.
+
+Fase 2: O Cursor (1s - 2.5s)
+
+Um cursor, representado por uma pequena bolinha branca com um leve brilho (box-shadow), entra na tela vindo do canto inferior direito.
+
+O movimento da bolinha deve usar a função spring do Remotion para ter uma aceleração e desaceleração orgânicas, parando exatamente em cima do texto "kiover.dll".
+
+Fase 3: O Clique e a Onda (2.5s - 3.5s)
+
+O cursor faz uma rápida animação de clique (diminui de tamanho com spring e desaparece).
+
+Imediatamente após o desaparecimento da bolinha, um efeito de "onda" (ripple) acontece. Uma forma circular começa a se expandir a partir do ponto do clique até cobrir a tela inteira.
+
+Esse círculo em expansão deve atuar como uma transição: a área dentro do círculo se torna o novo fundo (branco), e o texto "kiover.dll" dentro dessa área muda para preto.
+
+Fase 4: A Revelação Final (3.5s - 5s)
+
+Com o fundo agora totalmente branco e o texto "kiover.dll" preto, o texto desliza suavemente um pouco para cima.
+
+Logo abaixo dele, o texto "Developer" (com uma fonte um pouco menor, talvez em cinza escuro ou com um espaçamento de letras maior/tracking) surge com um fade-in e desliza de baixo para cima.
+
+Requisitos Técnicos:
+
+Use os hooks useCurrentFrame, useVideoConfig, interpolate, e spring.
+
+Utilize componentes separados se necessário para manter o código limpo (ex: <Cursor />, <WaveTransition />).
+
+Sinta-se livre para usar divs absolutas e manipulação de clip-path ou borderRadius (círculo expansivo) para criar o efeito da onda que inverte as cores.
+
+Forneça o código completo e pronto para rodar, incluindo as importações necessárias do remotion.
+
+Adicione comentários explicando as lógicas de interpolação.
